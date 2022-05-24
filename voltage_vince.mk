@@ -27,7 +27,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony_system_ext.mk)
 # Inherit from vince device
 $(call inherit-product, device/xiaomi/vince/device.mk)
 
-# Inherit some common Voltage stuff.
+# Inherit some common VoltageOS stuff.
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_DISABLE_POSTRENDER_CLEANUP := true
@@ -42,6 +42,7 @@ TARGET_VENDOR := Xiaomi
 BOARD_VENDOR := Xiaomi
 
 #VoltageOS
+VOLTAGE_BUILD_TYPE := OFFICIAL
 TARGET_SUPPORTS_GOOGLE_RECORDER := false
 TARGET_GAPPS_ARCH := arm64
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
